@@ -1,7 +1,7 @@
 # Modified Unsloth Jinja2 Chat Template for Gemma 4 12B
 # Changes by iboriss:
 #   1. Changed `is sequence` to `is iterable`.
-#   2. Hardcoded `enable_thinking=true`.
+#   2. Hardcoded `enable_thinking=true` at the top. Change to `false` line 6 to disable thinking.
 # License: Gemma 4 / Apache 2.0
 {%- set enable_thinking = true %}
 {%- macro format_parameters(properties, required, filter_keys=false) -%}
