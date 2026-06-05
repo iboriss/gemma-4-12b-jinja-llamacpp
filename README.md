@@ -7,5 +7,5 @@ Jinja2 template for Gemma 4 12B model. Fixes larger context errors in LMStudio/l
 ## Changes made to Unsloth Jinja
 
 1. Changed `is sequence` checks to `is iterable`. Prevents crashes when handling large context and multimodal inputs.
-2. Hardcoded `enable_thinking = true` at the top to enable reasoning, because `<|think|>` token doesn't work in lmstudio. Change to `false` to switch it off.
+2. Hardcoded `enable_thinking = true` at the top to enable reasoning, because `<|think|>` token doesn't work in lmstudio. Change to `false` to turn off reasoning.
 
